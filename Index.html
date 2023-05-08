@@ -15,7 +15,7 @@
 <body>
     <div class="form-content">
 
-        <form>
+        <form action="" name="formulario" method="get">
 
             <h1>Formulario de validación.</h1>
 
@@ -26,16 +26,18 @@
             <input type="text" name="apellido" id="apellido">
 
             <label for="email"> Correo electrónico </label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" onclick="validarEmail(form.email.value)">
 
             <label for="coments"> Comentarios </label>
             <textarea name="coments" id="coments" cols="40" rows="5"></textarea>
             
-            <input class="btn" type="submit" value="Enviar">
+            <input class="btn" type="submit" id="btn" name="btn" value="Enviar">
 
         </form>
 
     </div>
+
+    <script src="JavaScript/form.js"></script>
 </body>
 
 <footer class="footer">
