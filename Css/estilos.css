@@ -1,12 +1,90 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+body {
     font-family: 'Lato';
+    background-color: #2E3D50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 3em;
 }
+
+.form-content{
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.5)),
+        url(images/fonde.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;   
+}
+
+.form-content h1{
+    color: blanchedalmond;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction:column;
+    width: 80%;
+}
+
+label{
+    font-size: 17px;
+    color:blanchedalmond ;
+    margin-bottom: 10px;
+}
+
+input, textarea{
+    padding: 17px 14px;
+    background-color: #86484c;
+    border: 0;
+    font-size: 15px;
+    color: blanchedalmond;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+:focus{
+    outline: 2px solid #C8CBC0;
+}
+
+.btn {
+    background-color: #445A67;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4d6a7a;
+}
+
+.footer{
+    background-color:  #BBB4A2;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content{
+    color:#f9f9f9
+}
+
+
 
