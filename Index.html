@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +9,30 @@
 </head>
 
 <header>
-    <h1>Formulario de validación.</h1>
+   <div></div>
 </header>
 
 <body>
-    <form action="" class="formulario">
-       <input type="text" class="formulario__input">
-       <label for="" class="formulario__label">Nombre</label>
-       <input type="text" class="formulario__input">
-       <label for="" class="formulario__label">Apellido</label>
-       <input type="email" class="formulario__input">
-       <label for="" class="formulario__label">Correo electrónico</label>
-       <input type="text" class="formulario__input">
-       <label for="" class="formulario__label">Teléfono</label>
-       <input type="submit" class="formulario__submit">
-    </form>
+    <div class="form-content">
+
+        <form>
+
+            <h1>Formulario de validación.</h1>
+
+            <label for="nombre"> Nombre </label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido"> Apellido </label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="email"> Correo electrónico </label>
+            <input type="email" name="email" id="email">
+
+            <input class="btn" type="submit" value="Enviar">
+
+        </form>
+
+    </div>
 </body>
 
 <footer>
